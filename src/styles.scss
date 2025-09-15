@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    outline: none;
+}
+
+
+.removeBulletPoint {
+    list-style-type: none;
+}
+
+.homeSubComp {
+    width: 300px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.makeMouseOverPointer {
+    cursor: pointer;
+}

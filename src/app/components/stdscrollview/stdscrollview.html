@@ -1,0 +1,5 @@
+<div class="scroll-column-flex homeSubComp">
+    @for (item of getListItemValues(); track $index) {
+        <app-itemcomp [data]="item.item" [key]="item.key" />
+    }
+</div>
