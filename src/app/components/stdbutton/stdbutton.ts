@@ -1,5 +1,4 @@
 import { Component, input } from '@angular/core';
-import { ListItem } from '../../../model/defs.type';
 
 @Component({
   selector: 'app-stdbutton',

@@ -3,24 +3,85 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Papyrus, fantasy; 
+    // font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 26.4px;
 }
 
 * {
     outline: none;
 }
 
-
 .removeBulletPoint {
     list-style-type: none;
 }
 
-.homeSubComp {
-    width: 300px;
-    height: 150px;
-    border-style: solid;
-    border-width: 1px;
-}
-
 .makeMouseOverPointer {
     cursor: pointer;
+}
+
+@mixin dynamic-grid($rows, $cols) {
+  display: grid;
+  padding: 5px;
+  gap: 10px;
+  grid-template-columns: repeat($cols, 1fr);
+  grid-auto-rows: auto;
+
+  @for $row from 1 through $rows {
+    @for $col from 1 through $cols {
+      .grid-pos-#{$row}-#{$col} {
+        grid-row: $row;
+        grid-column: $col;
+      }
+    }
+  }
+  &.text-left {
+    video {
+      grid-column: 2;
+    }
+    .text {
+      grid-column: 1;
+    }
+  }
+}
+
+@for $rows from 1 through 5 {
+  @for $cols from 1 through 5 {
+    .dynamicGrid-#{$rows}x#{$cols} {
+      @include dynamic-grid($rows, $cols);
+    }
+  }
+}
+
+.centerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexTwoItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-items: flex-start;
+
+  video {
+    max-width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  div {
+    width: 100%;
+    max-width: 400px;
+    color: white;
+  }
+
+  &.text-left {
+    flex-direction: row-reverse;
+  }
 }

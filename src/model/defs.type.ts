@@ -35,6 +35,11 @@ export enum GlobalEmitType {
     SaveChanges
 }
 
+export enum VideoTextPos {
+    Left,
+    Right
+}
+
 //##########################
 //# HTTP Response Handling #
 //##########################
