@@ -1,8 +1,10 @@
 <header>
-    <nav>
-        <span class="makeMouseOverPointer" routerLink="/">{{title()}}</span>
-        <ul>
-            <li class="removeBulletPoint makeMouseOverPointer" routerLink="/about">About</li>
-        </ul>
+    <nav class="navBar">
+        <div>{{title()}}</div>
+        <div class="headerLinks">
+            <div class="removeBulletPoint makeMouseOverPointer" routerLink="/">Home</div>
+            <div class="removeBulletPoint makeMouseOverPointer" routerLink="/work">Work Projects</div>
+            <div class="removeBulletPoint makeMouseOverPointer" routerLink="/personal">Personal Projects</div>
+        </div>
     </nav>
 </header>

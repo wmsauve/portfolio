@@ -1,0 +1,29 @@
+<app-std-header-text headerText="{{titleOne()}}"></app-std-header-text>
+
+<app-std-header-intro-text headerText="{{headerOne()}}" introText="{{introOne()}}"></app-std-header-intro-text>
+<div class="dynamicGrid-3x1">
+    <app-stdvid fileName="clip1.mp4" textContent="{{vidOne()}}" [textPos]="VideoFormat.Left"></app-stdvid>
+    <app-stdvid fileName="clip2.mp4" textContent="{{vidTwo()}}" [textPos]="VideoFormat.Right"></app-stdvid>
+    <app-stdvid fileName="clip3.mp4" textContent="{{vidThree()}}" [textPos]="VideoFormat.Left"></app-stdvid>
+</div>
+
+<app-std-header-intro-text headerText="{{headerTwo()}}" introText="{{introTwo()}}"></app-std-header-intro-text>
+<div class="dynamicGrid-3x1">
+    <app-stdimg imageSrc="game1.jpg" [imageHeight]="338" [imageWidth]="600" textContent="{{imgOne()}}" [textPos]="VideoFormat.Right"></app-stdimg>
+    <app-stdimg imageSrc="game2.jpg" [imageHeight]="338" [imageWidth]="600" textContent="{{imgTwo()}}" [textPos]="VideoFormat.Left"></app-stdimg>
+    <app-stdimg imageSrc="game3.jpg" [imageHeight]="338" [imageWidth]="338" textContent="{{imgThree()}}" [textPos]="VideoFormat.Right"></app-stdimg>
+</div>
+
+<app-std-header-intro-text headerText="{{headerThree()}}" introText="{{introThree()}}"></app-std-header-intro-text>
+<div class="dynamicGrid-1x1">
+    <app-stdvid fileName="clip4.mp4" textContent="{{vidFour()}}" [textPos]="VideoFormat.Left"></app-stdvid>
+</div>
+
+<app-std-header-intro-text headerText="{{headerFour()}}" introText="{{introFour()}}"></app-std-header-intro-text>
+<div class="dynamicGrid-1x1">
+    <app-stdimg imageSrc="tm1.jpg" [imageHeight]="338" [imageWidth]="445" textContent="{{imgFour()}}" [textPos]="VideoFormat.Right"></app-stdimg>
+</div>
+
+<app-std-header-text headerText="{{titleTwo()}}"></app-std-header-text>
+
+<app-std-header-intro-text headerText="{{headerFive()}}" introText="{{introFive()}}"></app-std-header-intro-text>

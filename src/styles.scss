@@ -1,14 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-
 html, body {
     margin: 0;
     padding: 0;
     font-family: Papyrus, fantasy; 
-    // font-size: 24px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400; 
     line-height: 26.4px;
+    background-color: var(--main-color);
 }
 
 * {
@@ -21,6 +19,12 @@ html, body {
 
 .makeMouseOverPointer {
     cursor: pointer;
+    -webkit-text-stroke: 1px transparent;
+    transition: color 0.5s ease, -webkit-text-stroke-color 0.5s ease;
+
+    &:hover {
+      -webkit-text-stroke-color: var(--hover-color);
+    }
 }
 
 @mixin dynamic-grid($rows, $cols) {
@@ -83,10 +87,18 @@ html, body {
   div {
     width: 100%;
     max-width: 400px;
-    color: white;
+    color: #333;
   }
 
   &.text-left {
     flex-direction: row-reverse;
   }
+}
+
+
+//Variables
+:root {
+  --main-color: #f0e7c6;
+  --accent-color: #222;
+  --hover-color: #fffae7;
 }

@@ -2,8 +2,29 @@ header {
     display: flex;
     padding-inline: 16px;
     padding-block: 8px;
-    background-color: #333;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--main-color);
     align-items: center;
     justify-content: space-between;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navBar > div {
+    padding-right: 50px;
+}
+
+.headerLinks {
+    display: flex;
+    align-items: center;
+}
+
+.headerLinks > div {
+    padding-right: 20px;
+    padding-left: 20px;
 }

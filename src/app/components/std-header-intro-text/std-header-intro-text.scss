@@ -1,12 +1,12 @@
 .headerText {
-    color: white;
+    color: var(--accent-color);
     font-size: xx-large;
     padding-top: 50px;
 }
 
 .introText {
     padding: 20px;
-    color: white;
+    color: var(--accent-color);
     text-wrap: wrap;
     width: 600px;
     text-align: center;
