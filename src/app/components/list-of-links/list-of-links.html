@@ -1,0 +1,11 @@
+<div class="flexTwoItem">
+    <div class="shiftRightDiv">{{firstText()}}</div>
+    @if (!secondLink()){
+        <div>{{secondText()}}</div>
+    }
+    @else {
+        <div>
+            <a [href]="secondLink()" target="_blank" rel="noopener noreferrer">{{secondText()}}</a>
+        </div>
+    }
+</div>

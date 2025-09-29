@@ -1,0 +1,14 @@
+<app-std-header-text headerText="{{mainHeader()}}"></app-std-header-text>
+
+<app-std-header-intro-text headerText="{{headerOne()}}" introText="{{introOne()}}" [overrideWidth]="800"></app-std-header-intro-text>
+<div class="dynamicGrid-1x1">
+    <app-stdimg imageSrc="profilepic.jpg" [imageHeight]="348" [imageWidth]="348" textContent="{{profileText()}}" [textPos]="VideoFormat.Right"></app-stdimg>
+</div>
+
+<app-std-header-intro-text headerText="{{headerTwo()}}" introText="{{introTwo()}}" [overrideWidth]="800"></app-std-header-intro-text>
+<app-list-of-links firstText="{{contactTypeOne()}}" secondText="{{contactTextOne()}}"></app-list-of-links>
+<app-list-of-links firstText="{{contactTypeThree()}}" secondText="{{contactTextThree()}}" secondLink="{{contactLinkThree()}}"></app-list-of-links>
+
+<app-std-header-intro-text headerText="{{headerThree()}}" introText="{{introThree()}}" [overrideWidth]="800"></app-std-header-intro-text>
+<app-list-of-links firstText="{{websiteTypeOne()}}" secondText="{{websiteTextOne()}}" secondLink="{{websiteLinkOne()}}"></app-list-of-links>
+<app-list-of-links firstText="{{websiteTypeTwo()}}" secondText="{{websiteTextTwo()}}" secondLink="{{websiteLinkTwo()}}"></app-list-of-links>

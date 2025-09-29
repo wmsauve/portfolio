@@ -9,4 +9,5 @@ import { Component, input } from '@angular/core';
 export class StdHeaderIntroText {
   headerText = input.required<string>();
   introText = input.required<string>();
+  overrideWidth = input<number>(600);
 }
