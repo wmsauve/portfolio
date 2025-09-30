@@ -4,11 +4,12 @@
 
 <div class="dynamicGrid-3x1">
     <app-stdimg imageSrc="personalgame1.jpg" [imageHeight]="289" [imageWidth]="600" textContent="{{imgOne()}}" [textPos]="VideoFormat.Right"></app-stdimg>
-    <app-list-of-links firstText="{{contactTypeOne()}}" secondText="{{contactText()}}" secondLink="{{contactLinkOne()}}"></app-list-of-links>
     <app-stdimg imageSrc="personalgame2.jpg" [imageHeight]="320" [imageWidth]="600" textContent="{{imgTwo()}}" [textPos]="VideoFormat.Left"></app-stdimg>
-    <app-list-of-links firstText="{{contactTypeTwo()}}" secondText="{{contactText()}}" secondLink="{{contactLinkTwo()}}"></app-list-of-links>
-    <app-std-header-intro-text introText="{{textBodyOne()}}"></app-std-header-intro-text>
-    <app-list-of-links firstText="{{contactTypeThree()}}" secondText="{{contactText()}}" secondLink="{{contactLinkThree()}}"></app-list-of-links>
 </div>
 
+<app-std-header-intro-text introText="{{textBodyOne()}}"></app-std-header-intro-text>
+
+<app-list-of-links firstText="{{contactTypeOne()}}" secondText="{{contactText()}}" secondLink="{{contactLinkOne()}}"></app-list-of-links>
+<app-list-of-links firstText="{{contactTypeTwo()}}" secondText="{{contactText()}}" secondLink="{{contactLinkTwo()}}"></app-list-of-links>
+<app-list-of-links firstText="{{contactTypeThree()}}" secondText="{{contactText()}}" secondLink="{{contactLinkThree()}}"></app-list-of-links>
 <app-std-header-text headerText="{{titleTwo()}}"></app-std-header-text>
