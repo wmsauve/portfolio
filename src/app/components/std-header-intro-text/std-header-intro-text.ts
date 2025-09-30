@@ -7,7 +7,7 @@ import { Component, input } from '@angular/core';
   styleUrl: './std-header-intro-text.scss'
 })
 export class StdHeaderIntroText {
-  headerText = input.required<string>();
+  headerText = input<string | null>();
   introText = input.required<string>();
   overrideWidth = input<number>(600);
 }

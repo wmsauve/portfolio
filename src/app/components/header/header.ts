@@ -9,4 +9,10 @@ import { RouterLink } from '@angular/router';
 })
 export class Header {
   title = signal("William Sauvé");
+
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

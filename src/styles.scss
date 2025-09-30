@@ -1,3 +1,10 @@
+//Variables
+$main-color: #f0e7c6;
+$accent-color: #222;
+$hover-color: #fffae7;
+$mobile-breakpoint: 900px;
+$stop-pc-breakpoint: 1920px;
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,7 +13,7 @@ html, body {
     font-variant: normal; 
     font-weight: 400; 
     line-height: 26.4px;
-    background-color: var(--main-color);
+    background-color: $main-color;
 }
 
 * {
@@ -23,7 +30,7 @@ html, body {
     transition: color 0.5s ease, -webkit-text-stroke-color 0.5s ease;
 
     &:hover {
-      -webkit-text-stroke-color: var(--hover-color);
+      -webkit-text-stroke-color: $hover-color;
     }
 }
 
@@ -52,8 +59,8 @@ html, body {
   }
 }
 
-@for $rows from 1 through 5 {
-  @for $cols from 1 through 5 {
+@for $rows from 1 through 6 {
+  @for $cols from 1 through 6 {
     .dynamicGrid-#{$rows}x#{$cols} {
       @include dynamic-grid($rows, $cols);
     }
@@ -70,6 +77,10 @@ html, body {
   display: flex;
   justify-content: end;
   align-items: center;
+
+  @media (max-width: $mobile-breakpoint) {
+    justify-content: center;
+  }
 }
 
 .flexTwoItem {
@@ -99,12 +110,18 @@ html, body {
   &.text-left {
     flex-direction: row-reverse;
   }
-}
 
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column; 
+    align-items: center;   
 
-//Variables
-:root {
-  --main-color: #f0e7c6;
-  --accent-color: #222;
-  --hover-color: #fffae7;
+    &.text-left {
+      flex-direction: column; 
+    }
+
+    div {
+      max-width: 100%;    
+      text-align: center;   
+    }
+  }
 }

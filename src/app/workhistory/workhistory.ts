@@ -15,14 +15,14 @@ export class Workhistory {
 
   titleOne = signal<string>("More Involved Projects");
 
-  headerOne = signal<string>("Unreal Engine 5 (C++/Blueprints) - Metaverse project (2020-2021)");
+  headerOne = signal<string>("Unreal Engine 5 (C++/Blueprints) - Metaverse project (2021-2022)");
   introOne = signal<string>("This was my first project using Unreal Engine 5. I was the lead developer, however the team was small and only consisted of one other junior developer.");
 
   vidOne = signal<string>("User Interface for a released but later discontinued Unreal Engine 5 product. Joining the \"Sandbox Mode\" prompts AWS Gamelift to place the user into an available game world.");
   vidTwo = signal<string>("Loading sequence modified from Unreal Engine 5 tech demo combined with Cesium Unreal Engine plugin for rendering Earth-sized objects. ");
   vidThree = signal<string>("This early access build successfully networked players over authoritative servers hosted on AWS. Clientside prediction was still required to improve rubberbanding effect on player character model. The game world was also a modified version of the Unreal Engine 5 tech demo.");
 
-  headerTwo = signal<string>("Three.js/node.js (HTML/CSS/JS+TS) - Browser minigames (2021-2022)");
+  headerTwo = signal<string>("Three.js/node.js (HTML/CSS/JS+TS) - Browser minigames (2020-2021)");
   introTwo = signal<string>("These were games I was tasked to develop as part of the company's Arcade platform project. Every game was developed, deployed, and managed 100% by me. Designs were handled by other people on the team and assets were either handled by the design team or purchased from online marketplaces. Every game was multiplayer and handled 1v1 matches.");
 
   imgOne = signal<string>("This was the second game that was released. The gameplay follows the even/odd guessing win condition in the marble game played in Squid Game.");
@@ -41,6 +41,15 @@ export class Workhistory {
 
   titleTwo = signal<string>("Smaller Temporary Projects or Prototypes");
 
-  headerFive = signal<string>("Hello");
-  introFive = signal<string>("Hello");
+  headerFive = signal<string>("React/node.js (HTML/CSS/TS) - Web development (2023-2024)");
+  introFive = signal<string>("At various points in time during my employment at FluentT, I assisted in doing frontend web development. These websites are no longer deployed or were replaced whenever a more dedicated frontend web developer was hired in late 2024.");
+
+  headerSix = signal<string>("Unity (C#) - AR (2023)");
+  introSix = signal<string>("Using the XR and AR foundation packages, I spent a number of months prototyping an AR application that made use of the company's animation solution. The functionality implemented was basic and includes placing game objects on surfaces and triggering logic based on detecting specific images with your device's camera. The project went nowhere and the company trashed it.");
+
+  headerSeven = signal<string>("Unreal Engine 5 (C++/Blueprints) - VR (2021)");
+  introSeven = signal<string>("Using a Quest 2, I was tasked with testing the performance of various 3D assets to determine whether to pursue a larger scale application using VR. This ended up being scrapped in order to work on the project detailed above.");
+
+  headerEight = signal<string>("Unreal Engine 5 (C++/Blueprints) - Cinematic (2022)");
+  introEight = signal<string>("During my time at FluentT, my first project worked on was a cinematic that I was tasked with making using some other company's assets. This only lasted a few months because I'm not actually a very artistic person with an eye for camera shots and composition and there was no planning whatsoever. Regardless, I became quite familiar with the Sequencer in Unreal Engine and was able to further familiarize myself with the engine in general.");
 }

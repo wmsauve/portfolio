@@ -1,11 +1,12 @@
+@use '../../../styles.scss';
+
 header {
-    display: flex;
+
     padding-inline: 16px;
     padding-block: 8px;
-    background-color: var(--accent-color);
-    color: var(--main-color);
-    align-items: center;
-    justify-content: space-between;
+    background-color: styles.$accent-color;
+    color: styles.$main-color;
+
 }
 
 .navBar {
@@ -27,4 +28,39 @@ header {
 .headerLinks > div {
     padding-right: 20px;
     padding-left: 20px;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: styles.$mobile-breakpoint) {
+    .burger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navBar {
+        justify-content: space-between;
+    }
+
+    .navBar > div {
+        padding-right: 20px;
+    }
+
+    .headerLinks {
+        display: none; 
+        flex-direction: column;
+        background: styles.$accent-color;
+        position: absolute;
+        top: 60px;  
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .headerLinks.open {
+        display: flex; 
+    }
 }
