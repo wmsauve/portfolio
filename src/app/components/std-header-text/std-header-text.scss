@@ -1,13 +1,14 @@
-@use '../../../styles.scss';
+@use '../../../partials/variables';
+
 
 .headerText {
-    color: styles.$accent-color;
+    color: variables.$accent-color;
     font-size: 50px;
     text-decoration: underline;
     padding-top: 50px;
 }
 
-@media (max-width: styles.$stop-pc-breakpoint) {
+@media (max-width: variables.$stop-pc-breakpoint) {
     .headerText{
         font-size: clamp(24px, 4vw, 50px);
     }

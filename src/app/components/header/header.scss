@@ -1,11 +1,11 @@
-@use '../../../styles.scss';
+@use '../../../partials/variables';
 
 header {
 
     padding-inline: 16px;
     padding-block: 8px;
-    background-color: styles.$accent-color;
-    color: styles.$main-color;
+    background-color: variables.$accent-color;
+    color: variables.$main-color;
 
 }
 
@@ -34,7 +34,7 @@ header {
   display: none;
 }
 
-@media (max-width: styles.$mobile-breakpoint) {
+@media (max-width: variables.$mobile-breakpoint) {
     .burger {
         display: block;
         margin-left: auto;
@@ -51,7 +51,7 @@ header {
     .headerLinks {
         display: none; 
         flex-direction: column;
-        background: styles.$accent-color;
+        background: variables.$accent-color;
         position: absolute;
         top: 60px;  
         right: 0;
