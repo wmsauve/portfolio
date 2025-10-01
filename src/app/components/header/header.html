@@ -1,14 +1,16 @@
+
+
 <header>
     <nav class="navBar">
         <div>{{title()}}</div>
-
-        <div class="headerLinks" [class.open]="isMenuOpen">
+        
+        <div id="links" class="headerLinks" [class.open]="isMenuOpen">
             <div class="removeBulletPoint makeMouseOverPointer" routerLink="/">Home</div>
             <div class="removeBulletPoint makeMouseOverPointer" routerLink="/work">Work Projects</div>
             <div class="removeBulletPoint makeMouseOverPointer" routerLink="/personal">Personal Projects</div>
         </div>
 
-        <div class="burger makeMouseOverPointer" (click)="toggleMenu()">
+        <div class="burger makeMouseOverPointer" (click)="toggleMenu($event)">
             &#9776; 
         </div>
     </nav>

@@ -3,13 +3,14 @@
 
 .headerText {
     color: variables.$accent-color;
-    font-size: 50px;
+    font-size: variables.$header-text;
     text-decoration: underline;
-    padding-top: 50px;
+    padding-top: variables.$header-text;
 }
 
 @media (max-width: variables.$stop-pc-breakpoint) {
     .headerText{
-        font-size: clamp(24px, 4vw, 50px);
+        font-size: clamp(variables.$header-text-min, variables.$scale-text-factor, variables.$header-text);
+        padding-top: clamp(variables.$header-text-min, variables.$scale-text-factor, variables.$header-text)
     }
 }

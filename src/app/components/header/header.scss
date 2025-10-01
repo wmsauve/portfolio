@@ -1,23 +1,21 @@
 @use '../../../partials/variables';
 
 header {
-
     padding-inline: 16px;
     padding-block: 8px;
     background-color: variables.$accent-color;
     color: variables.$main-color;
-
 }
 
 .navBar {
     display: flex;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: variables.$small-padding;
+    padding-bottom: variables.$small-padding;
 }
 
 .navBar > div {
-    padding-right: 50px;
+    padding-right: variables.$large-padding;
 }
 
 .headerLinks {
@@ -26,8 +24,8 @@ header {
 }
 
 .headerLinks > div {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: variables.$small-padding;
+    padding-left: variables.$small-padding;
 }
 
 .burger {
@@ -45,15 +43,15 @@ header {
     }
 
     .navBar > div {
-        padding-right: 20px;
+        padding-right: 0px;
     }
 
     .headerLinks {
-        display: none; 
+        display: flex; 
         flex-direction: column;
         background: variables.$accent-color;
         position: absolute;
-        top: 60px;  
+        top: -100px;  
         right: 0;
         width: 200px;
         padding: 10px;
@@ -62,5 +60,38 @@ header {
 
     .headerLinks.open {
         display: flex; 
+    }
+
+    @keyframes slideInMenu {
+        from { transform: translateX(0px) translateY(0px); }
+        to { transform: translateX(0px) translateY(160px); }
+    }
+
+    .slideInMenu {
+        animation: slideInMenu variables.$anim-quick ease forwards;
+    }
+    .slideOutMenu {
+        animation: slideInMenu variables.$anim-quick ease reverse;
+    }
+}
+
+.makeMouseOverPointer {
+    cursor: pointer;
+    -webkit-text-stroke: 1px transparent;
+    transition: color variables.$anim-quick ease, -webkit-text-stroke-color variables.$anim-quick ease;
+
+    &:hover {
+        -webkit-text-stroke-color: variables.$hover-color;
+    }
+
+    @media (max-width: variables.$mobile-breakpoint) {
+        @keyframes strokePulse {
+            0%  { -webkit-text-stroke-color: variables.$hover-color; }
+            100% { -webkit-text-stroke-color: transparent; }
+        }
+
+        &.animatePulse {
+            animation: strokePulse variables.$anim-slow ease forwards;
+        }
     }
 }

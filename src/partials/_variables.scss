@@ -1,5 +1,31 @@
+//Colors
 $main-color: #f0e7c6;
 $accent-color: #222;
 $hover-color: #fffae7;
+
+//Breakpoints
 $mobile-breakpoint: 900px;
 $stop-pc-breakpoint: 1920px;
+
+//Font sizes
+$header-text: 50px;
+$header-text-min: 20px;
+
+$label-text: 32px;
+$label-text-min: 12px;
+
+$info-text: 18px;
+$info-text-min: 8px;
+
+$scale-text-factor: 4vw;
+$scale-text-factor-small: 3vw;
+
+//Padding
+$large-padding: 50px;
+$large-padding-min: 20px;
+
+$small-padding: 20px;
+
+//Animation
+$anim-quick: 0.5s;
+$anim-slow: 1s;

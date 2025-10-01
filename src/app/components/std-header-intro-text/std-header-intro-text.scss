@@ -2,12 +2,12 @@
 
 .headerText {
     color: variables.$accent-color;
-    font-size: 32px;
-    padding-top: 50px;
+    font-size: variables.$label-text;
+    padding-top: variables.$header-text;
 }
 
 .introText {
-    padding: 20px;
+    padding: variables.$small-padding;
     color: variables.$accent-color;
     text-wrap: wrap;
     text-align: center;
@@ -15,11 +15,11 @@
 
 @media (max-width: variables.$stop-pc-breakpoint) {
     .headerText{
-        font-size: clamp(8px, 4vw, 32px);
-        padding-top: clamp(24px, 4vw, 50px);
+        font-size: clamp(variables.$label-text-min, variables.$scale-text-factor, variables.$label-text);
+        padding-top: clamp(variables.$large-padding-min, variables.$scale-text-factor, variables.$large-padding);
     }
 
     .introText{
-        font-size: clamp(12px, 2vw, 20px);
+        font-size: clamp(variables.$info-text-min, variables.$scale-text-factor-small, variables.$info-text);
     }
 }

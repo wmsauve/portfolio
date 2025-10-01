@@ -1,0 +1,13 @@
+@use '../../../partials/variables';
+
+.linksText {
+    color: variables.$accent-color;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+@media (max-width: variables.$stop-pc-breakpoint) {
+    .linksText{
+        font-size: clamp(variables.$info-text-min, variables.$scale-text-factor-small, variables.$info-text);
+    }
+}
