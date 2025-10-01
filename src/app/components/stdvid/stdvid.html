@@ -1,7 +1,15 @@
 <div class="flexTwoItem {{textColumn()}}">
-    <video controls width="600" height="338" id="myVideo">
-        <source src="{{fileName()}}" type="video/mp4" />
-    </video>
+    @switch (vidType().valueOf()){
+        @case (vidDefs.Imported){
+            <video controls width="600" height="338" id="myVideo">
+                <source src="{{fileName()}}" type="video/mp4" />
+            </video>
+        }
+        @case (vidDefs.YouTubeEmbed){
+            <iframe [src]="fileName() | urlSanitizer" width="600" height="338"></iframe>
+        }
+    }
+
     <div class="flexText">
         {{textContent()}}
     </div>

@@ -12,4 +12,17 @@
 <app-list-of-links firstText="{{contactTypeOne()}}" secondText="{{contactText()}}" secondLink="{{contactLinkOne()}}"></app-list-of-links>
 <app-list-of-links firstText="{{contactTypeTwo()}}" secondText="{{contactText()}}" secondLink="{{contactLinkTwo()}}"></app-list-of-links>
 <app-list-of-links firstText="{{contactTypeThree()}}" secondText="{{contactText()}}" secondLink="{{contactLinkThree()}}"></app-list-of-links>
+
+<app-std-header-intro-text headerText="{{headerTwo()}}" introText="{{introTwo()}}"></app-std-header-intro-text>
+
+<div class="dynamicGrid-2x1">
+    <app-stdvid fileName="clip5.mp4" textContent="{{vidOne()}}" [textPos]="VideoFormat.Right"></app-stdvid>
+    <app-stdvid fileName="https://www.youtube.com/embed/WlQN-kGA3ew" [vidType]="VideoDefs.YouTubeEmbed" textContent="{{vidTwo()}}" [textPos]="VideoFormat.Left"></app-stdvid>
+</div>
+
+<app-std-header-intro-text introText="{{textBodyTwo()}}"></app-std-header-intro-text>
+
+<app-std-header-intro-text headerText="{{headerThree()}}" introText="{{introTwo()}}"></app-std-header-intro-text>
+
 <app-std-header-text headerText="{{titleTwo()}}"></app-std-header-text>
+
