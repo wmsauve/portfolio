@@ -102,8 +102,6 @@ html, body {
   align-items: flex-start;
 
   video, iframe, img {
-    width: 100%;
-    height: auto;
     border: 2px solid black;
     border-radius: 10px;
   }
@@ -124,6 +122,13 @@ html, body {
 
     &.text-left {
       flex-direction: column; 
+    }
+
+    video, iframe, img {
+      width: 100%;
+      height: auto;
+      border: 2px solid black;
+      border-radius: 10px;
     }
 
     div {
