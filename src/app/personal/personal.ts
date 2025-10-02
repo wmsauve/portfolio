@@ -53,8 +53,14 @@ export class Personal {
   fileNameOne = signal<string>("documentation.pdf");
 
   headerFive = signal<string>("Angular/.NET (C#/HTML/CSS/TS) - Todo List");
-  introFive = signal<string>("This was another project I made as part of a job application. But");
+  introFive = signal<string>("This was another project I made as part of a job application. While the project itself is minimalist and probably not very optimal, it got me into Angular.");
+  contactTypeFive = signal<string>("Angular Frontend");
+  contactLinkFive = signal<string>("https://github.com/wmsauve/TODO-A");
+  contactTypeSix = signal<string>(".Net Backend");
+  contactLinkSix = signal<string>("https://github.com/wmsauve/TODO-S");
 
   headerSix = signal<string>("Angular (HTML/CSS/TS) - This Portfolio Website");
-  introSix = signal<string>("I'd previously used either three.js or React whenever doing any kind of web development.");
+  introSix = signal<string>("I am a much bigger fan of Angular than React. So this website is made with Angular and not React. I wonder how much I would end up changing my opinion the second I am tasked with working on a React project. I like making games more, so there is probably a lot of insincerity in my choosing of a favorite web development framework.");
+  contactTypeSeven = signal<string>("Angular Frontend");
+  contactLinkSeven = signal<string>("https://github.com/wmsauve/portfolio");
 }
