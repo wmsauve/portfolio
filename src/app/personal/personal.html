@@ -22,7 +22,21 @@
 
 <app-std-header-intro-text introText="{{textBodyTwo()}}"></app-std-header-intro-text>
 
-<app-std-header-intro-text headerText="{{headerThree()}}" introText="{{introTwo()}}"></app-std-header-intro-text>
+<app-std-header-intro-text headerText="{{headerThree()}}" introText="{{introThree()}}"></app-std-header-intro-text>
+
+<div class="dynamicGrid-1x1">
+    <app-stdvid fileName="clip6.mp4" textContent="{{vidThree()}}" [textPos]="VideoFormat.Right"></app-stdvid>
+</div>
 
 <app-std-header-text headerText="{{titleTwo()}}"></app-std-header-text>
 
+<app-std-header-intro-text headerText="{{headerFour()}}" introText="{{introFour()}}"></app-std-header-intro-text>
+
+<div class="dynamicGrid-1x1">
+    <app-stdvid fileName="clip7.mp4" textContent="{{vidFour()}}" [textPos]="VideoFormat.Left"></app-stdvid>
+</div>
+
+<app-list-of-links firstText="{{contactTypeFour()}}" secondText="{{contactText()}}" secondLink="{{contactLinkFour()}}"></app-list-of-links>
+<app-download-link downloadLabel="{{downloadLabelOne()}}" filePath="{{downloadFileOne()}}" fileName="{{fileNameOne()}}"></app-download-link>
+
+<app-std-header-intro-text headerText="{{headerFive()}}" introText="{{introFive()}}"></app-std-header-intro-text>

@@ -5,10 +5,11 @@ import { Stdimg } from '../components/stdimg/stdimg';
 import { VideoTextPos, VideoType } from '../../model/defs.type';
 import { ListOfLinks } from '../components/list-of-links/list-of-links';
 import { Stdvid } from "../components/stdvid/stdvid";
+import { DownloadLink } from "../components/download-link/download-link";
 
 @Component({
   selector: 'app-personal',
-  imports: [StdHeaderIntroText, Stdimg, StdHeaderText, ListOfLinks, Stdvid],
+  imports: [StdHeaderIntroText, Stdimg, StdHeaderText, ListOfLinks, Stdvid, DownloadLink],
   templateUrl: './personal.html',
   styleUrl: './personal.scss'
 })
@@ -38,6 +39,22 @@ export class Personal {
   textBodyTwo = signal<string>("You can find a link to my blog on the home page where I detail my journey of developing this game. This is a passion project that I expect will end up taking multiple times longer to develop than originally planned. A number of issues like scope creeping myself and real life blockers have made it hard at times to stay focused on this project. Regardless, it will eventually get done one way or another.");
 
   headerThree = signal<string>("Unity (C#) - Unnamed Group Project (Ongoing)");
-
+  introThree = signal<string>("This is another indie project that I am involved with. It is in very early stages of development with the only 100% confirmed components are that it will be a 2D game.");
+  vidThree = signal<string>("As mentioned, development is in the very early stages. My only experience with 2D games is the web browser based games that were not made using Unity. Here is a preliminary bit of development familiarizing myself with how Unity handles 2D components and implementing some chunk loading optimization.");
+  
   titleTwo = signal<string>("Miscellaneous Projects");
+  headerFour = signal<string>("Unity (C#) - L-system visualizer");
+  introFour = signal<string>("This was a project I made as part of a job application process. I was tasked with visualizing a tree in Unity and decided to use L(indenmayer)-systems as the primary driving logic.");
+  vidFour = signal<string>("The main options to choose from are whether to use hardcoded L-systems taken from The Algorithmic Beauty of Plants (Lindenmayer and Prusinkiewicz) or to create a dynamic L-system and whether to instantly render the L-system or allow for the growth logic to visualize the tree growing. Vizualizing the tree with compute shaders was required to prevent more complex L-systems from massively impacting performance due to the exponential nature of how they grow.");
+  contactTypeFour = signal<string>("L-system Project");
+  contactLinkFour = signal<string>("https://github.com/wmsauve/LsystemVisualizer");
+  downloadLabelOne = signal<string>("Documentation");
+  downloadFileOne = signal<string>("doc1.pdf");
+  fileNameOne = signal<string>("documentation.pdf");
+
+  headerFive = signal<string>("Angular/.NET (C#/HTML/CSS/TS) - Todo List");
+  introFive = signal<string>("This was another project I made as part of a job application. But");
+
+  headerSix = signal<string>("Angular (HTML/CSS/TS) - This Portfolio Website");
+  introSix = signal<string>("I'd previously used either three.js or React whenever doing any kind of web development.");
 }
