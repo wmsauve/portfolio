@@ -10,7 +10,7 @@
     padding: variables.$small-padding;
     color: variables.$accent-color;
     text-wrap: wrap;
-    text-align: center;
+    text-align: left;
 }
 
 @media (max-width: variables.$stop-pc-breakpoint) {

@@ -11,14 +11,14 @@
 
 
 html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Papyrus, fantasy; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 400; 
-    line-height: 26.4px;
-    background-color: variables.$main-color;
+  margin: 0;
+  padding: 0;
+  font-family: Papyrus, fantasy; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400; 
+  line-height: 26.4px;
+  background-color: variables.$main-color;
 }
 
 * {
@@ -81,16 +81,16 @@ html, body {
 }
 
 .flexText {
-    padding: variables.$small-padding;
-    color: variables.$accent-color;
-    text-wrap: wrap;
-    text-align: center;
-    font-size: variables.$info-text;
+  padding: variables.$small-padding;
+  color: variables.$accent-color;
+  text-wrap: wrap;
+  text-align: left;
+  font-size: variables.$info-text;
 }
 
 @media (max-width: variables.$stop-pc-breakpoint) {
     .flexText{
-        font-size: clamp(variables.$info-text-min, variables.$scale-text-factor-small, variables.$info-text);
+      font-size: clamp(variables.$info-text-min, variables.$scale-text-factor-small, variables.$info-text);
     }
 }
 
@@ -99,7 +99,6 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  align-items: flex-start;
 
   video, iframe, img {
     border: 2px solid black;
