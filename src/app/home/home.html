@@ -4,6 +4,7 @@
 <div class="dynamicGrid-1x1">
     <app-stdimg imageSrc="profilepic.jpg" [imageHeight]="348" [imageWidth]="348" textContent="{{profileText()}}" [textPos]="VideoFormat.Right"></app-stdimg>
 </div>
+<app-download-link downloadLabel="{{downloadLabelOne()}}" filePath="{{downloadFileOne()}}" fileName="{{fileNameOne()}}"></app-download-link>
 
 <app-std-header-intro-text headerText="{{headerTwo()}}" introText="{{introTwo()}}" [overrideWidth]="800"></app-std-header-intro-text>
 <app-list-of-links firstText="{{contactTypeOne()}}" secondText="{{contactTextOne()}}"></app-list-of-links>

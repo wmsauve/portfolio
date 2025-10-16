@@ -4,10 +4,11 @@ import { VideoTextPos } from '../../model/defs.type';
 import { StdHeaderText } from '../components/std-header-text/std-header-text';
 import { StdHeaderIntroText } from '../components/std-header-intro-text/std-header-intro-text';
 import { ListOfLinks } from "../components/list-of-links/list-of-links";
+import { DownloadLink } from '../components/download-link/download-link';
 
 @Component({
   selector: 'app-home',
-  imports: [Stdimg, StdHeaderText, StdHeaderIntroText, ListOfLinks],
+  imports: [Stdimg, StdHeaderText, StdHeaderIntroText, ListOfLinks, DownloadLink],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
@@ -19,6 +20,10 @@ export class Home {
 
   headerOne = signal<string>("Game Developer");
   introOne = signal<string>("I consider my primary skillset to be that of a game developer. The type of coding I have spent the most of my time doing has been related to implementing the gameplay mechanics, working with 3D animated models, understanding optimization techniques related to constructing 3D game worlds, etc. However, I have been exposed to or actively worked on projects that have spanned a number of frameworks unrelated to game development. Take a look through both project tabs to check them out.");
+
+  downloadLabelOne = signal<string>("Resume");
+  downloadFileOne = signal<string>("Resume-wmgen.pdf");
+  fileNameOne = signal<string>("resume.pdf");
 
   headerTwo = signal<string>("Contact");
   introTwo = signal<string>("As a Millenial, I don't answer calls on my phone (not that I think anyone is going to call me anyways). I do reply very quickly to text messages and emails.");
